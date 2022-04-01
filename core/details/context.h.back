@@ -1,0 +1,63 @@
+#pragma once
+
+#include <stdlib.h>
+#include <cstdint>
+
+namespace rco {
+	namespace core {
+
+		/**
+		 * @brief 需要保存的寄存器数据。即所谓上下文
+		 */
+		struct Context {
+			/**
+			 *
+			 *	按照约定, rbx, r12-r15 是 callee save 寄存器， 即被调者保存寄存器
+			 *
+			 */
+			void* rsp;	// 栈顶指针寄存器/帧寄存器/frame pointer
+			void* rbp;  // 指针寄存器，存储栈帧的起始位置(高地址位)
+			void* rax;  // 累加器，函数返回结果一般存放在这个寄存器中
+			void* rbx;  // 基地寄存器
+			void* rdi;  // 目的地址寄存器，按约定一般用来存储函数的第一个参数
+
+			// 12-15 通用寄存器
+			void* r12;
+			void* r13;
+			void* r14;
+			void* r15;
+
+			char* sp;	// 栈地址指针(其实是使用对内存来模仿一个栈)
+			size_t ss;  // 栈大小
+
+		};
+
+		extern "C" {
+
+			/**
+			 * @brief 初始化上下文
+			 *
+			 * @param[in] ctx 上下文对象
+			 */
+			void context_init(Context& ctx);
+
+			/**
+			 * @brief 创建上下文
+			 *
+			 * @param[in] ctx 上下文对象
+			 * @param[in] pfn 需要执行的具体函数
+			 * @param[in] arg 函数参数
+			 */
+			void context_make(Context& ctx, co_fn pfn, void* arg);
+
+			/**
+			 * @brief 上下文切换
+			 *
+			 * @param[in] suspend 需要切出的上下文对象
+			 * @param[in] resume  需要切入的上下文对象
+			 */
+			void context_jump(Context*, Context*) asm("context_jump");
+		}
+	}
+}
+

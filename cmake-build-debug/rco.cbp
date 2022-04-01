@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rco"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/Code/cppCode/Rco/rco/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/Code/cppCode/Rco/rco/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/Code/cppCode/Rco/rco/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rco">
+				<Option output="/home/Code/cppCode/Rco/rco/cmake-build-debug/rco" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Code/cppCode/Rco/rco/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Code/cppCode/Rco/rco/../third_party/jemalloc/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/../../../../include/c++/8/x86_64-kylin-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 rco"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rco/fast">
+				<Option output="/home/Code/cppCode/Rco/rco/cmake-build-debug/rco" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Code/cppCode/Rco/rco/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Code/cppCode/Rco/rco/../third_party/jemalloc/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/../../../../include/c++/8/x86_64-kylin-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-kylin-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 rco/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/Code/cppCode/Rco/rco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/Code/cppCode/Rco/rco/common/semaphore.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/core/asm/context_jump.S">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/core/details/context.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/core/details/context.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/core/rcontext.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/core/rcontext.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/cpc/channel.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/cpc/channel.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/main.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/scheduler/processor.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/scheduler/processor.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/scheduler/runtime.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/scheduler/runtime.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/scheduler/scheduler.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/scheduler/scheduler.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/task/task.cpp">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/task/task.h">
+			<Option target="rco"/>
+		</Unit>
+		<Unit filename="/home/Code/cppCode/Rco/rco/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
